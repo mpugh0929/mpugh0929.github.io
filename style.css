@@ -27,11 +27,11 @@
 }
 
 /* spacing on all sections */
-/* #about, #services, #portfolio, #contact {
+#about, #experience, #portfolio, #project {
     margin-top: 4rem;
     padding-top: 4rem;
-} */
-#contact {
+}
+#project {
     padding-bottom: 4rem;
 }
 /* about section image css */
@@ -39,12 +39,12 @@
     width: 100%;
 }
 
-/* services section css */
-.servicesText.card {
+/* experience section css */
+.experienceText.card {
     height: 280px;
     cursor: pointer;
   }
-.servicesIcon {
+.experienceIcon {
     font-size: 36px;
     text-align: center;
     width: 100%;
@@ -52,10 +52,10 @@
 .card-title {
     text-align: center;
 }
-.card:hover .servicesIcon {
+.card:hover .experienceIcon {
     color: #008000;
 }
-.servicesText:hover {
+.experienceText:hover {
     border: 1px solid #008000;
 }
 
@@ -71,121 +71,37 @@
     color: #000000;
 }
 
-input[type=text], select, textarea {
-  font-family:Trebuchet MS, sans-serif;
-  height: 25px;
-  width: 100%; /* Full width */
-  padding: 15px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 3px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+table {
+  border-spacing: 40px !important;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .hidden {
   display: none;
 }
 
-input[type="number"] {
-  -webkit-appearance: textfield;
-     -moz-appearance: textfield;
-          appearance: textfield;
-}
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-}
-
-.center {
-  margin-left: auto;
-  margin-right: auto;
-}
-div.container {
-display: inline-block;
-border: 12px;
-border-radius: 10px;
-background-color: #ffffff;
-padding: 20px;
-text-align: center;
-}
-
-input[type=button]{
-  font-family:Trebuchet MS, sans-serif;
-  font-size:15px;
-  font-family:Arial;
-  width:140px;
-  height:50px;
-  border-width:1px;
-  color:#000000;
-  border-color:#3866a3;
-  font-weight:bold;
-  border-top-left-radius:6px;
-  border-top-right-radius:6px;
-  border-bottom-left-radius:6px;
-  border-bottom-right-radius:6px;
-  box-shadow:inset 0px 1px 0px 0px #bee2f9;
-  text-shadow:inset 0px 1px 0px #7cacde;
-  background:linear-gradient(#63b8ee, #468ccf);
-}
-
-input[type=button]:hover {
-  background: linear-gradient(#468ccf, #63b8ee);
-}
-input[type=button]:hover {
-	background-color:#5cbf2a;
-}
-#Roll{
-  background:#008000;
-}
-#Stop{
-  background: #ff0000
-}
-#gameStats{
-font-family: "Courier New", Courier, monospace;
-font-size: 25px;
-letter-spacing: 1.2px;
-word-spacing: -0.8px;
-color: #000000;
-font-weight: bold;
-text-decoration: none;
-font-style: normal;
-font-variant: small-caps;
-text-transform: uppercase;
-border: 4px inset #1C6EA4;
-bottom: -191px;
-background: #D0E4F5 url("http://clipart-library.com/clipart/6cp6pRXEi.htm") repeat fixed 50% 0%;
-
-
-}
-
-a.menu:hover {
-  background-color:yellow;
-  font-size:20px;
-}
-
-input[type=button]:hover {
-  background: linear-gradient(#468ccf, #63b8ee);
-}
-input[type=button]:hover {
-	background-color:#5cbf2a;
-}
-footer {
-   position:absolute;
-   color: #fff;
-   bottom:0;
-   width:100%;
-   height:60px;   /* Height of the footer */
-   background:##ee7752, #e73c7e, #23a6d5, #23d5ab;
-}
-
-table {
-  border-spacing: 10px;
-}
-
 /* footer styling */
 #footer {
     background-color: #808080;
     text-align: center;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+input[type=text], select, textarea {
+  height: 25px;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  resize: vertical
 }

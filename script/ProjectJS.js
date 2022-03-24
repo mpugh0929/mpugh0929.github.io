@@ -131,6 +131,7 @@ class Game {
     displayElement.innerHTML = "";
     // append the imgs to the div
     displayElement.appendChild(dicePic1);
+    displayElement.innerHTML += "&nbsp; &nbsp; &nbsp; &nbsp;";
     displayElement.appendChild(dicePic2);
   }
   // end the game, change displays
