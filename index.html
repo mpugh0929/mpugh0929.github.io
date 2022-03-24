@@ -4,12 +4,9 @@
   <title>Matt's Portfolio Website</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- linking css file -->
   <link rel="stylesheet" href="style.css">
-  <!-- bootstrap CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- font awesome -->
   <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
 </head>
 
@@ -27,13 +24,16 @@
                         <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#about">About Matt</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#experience">Experience</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#project">Webapp Project</a>
                     </li>
                 </ul>
 
@@ -62,8 +62,9 @@
                 </div>
 
                 <div class="col-lg-8">
-                    <p> Thanks for stopping by! Welcome to my website. Here, I plan on displaying my experiences, projects, and even some about myself. Now, time for some fast facts:
-
+                    <p> Thanks for stopping by! Welcome to my website.
+                      Here, I plan on displaying my experiences, projects, and even some about myself.
+                      Now, time for some fast facts:
                     </p>
                     <div class="row mt-3">
                         <div class="col-md-6">
@@ -71,15 +72,13 @@
                                 <li>Name: Matt Pugh</li>
                                 <li>Age: 20</li>
                                 <li>Occupation: Software Developer</li>
-
                             </ul>
                         </div>
                         <div class="col-md-6">
                             <ul>
-                                <li>My favorite food are buffalo wings</li>
+                                <li>My favorite food is buffalo wings</li>
                                 <li>I'm a huge Ravens fan</li>
-                                <li>I really enjoy playing video games</li>
-
+                                <li>I like playing video games in my free time</li>
                             </ul>
                         </div>
                     </div>
@@ -124,7 +123,7 @@
                         <div class="card-body">
                             <i class='fas servicesIcon fa-solid fa-trophy'></i>
                             <h4 class="card-title mt-3">Upsilon Pi Epsilon Honor Society</h4>
-                            <p class="card-text mt-3">In April, I was inducted into Mount Saint Mary's chapter of the Upsilon Pi Epsilon Honor Society. It is an honor society for high-achieving students in Computer and Information Science.
+                            <p class="card-text mt-3">In April, I was inducted into Mount Saint Mary's chapter of the Upsilon Pi Epsilon Honor Society. It's an honor society for high-achieving students in Computer and Information Science.
                             </p>
                         </div>
                     </div>
@@ -178,7 +177,7 @@
                         <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
                         <div class="card-body">
                             <h4 class="card-title">Lead Machine</h4>
-                            <p class="card-text">This project is one I created for a local insurance broker to quickly and easily send messages to potential clients. On my GitHub, I have a watered down version available to download to give an idea of what it entails. On this version, I used Python/Flask for the back end and HTML/CSS for the front end.</p>
+                            <p class="card-text">This project is one I created for a local insurance broker to quickly and easily send messages to potential clients. Down below, there is a link to the original prototype of the project. It was made entirely with Python, utilizing libraries like tkinter, Twilio, and more.</p>
                             <div class="text-center">
                                 <a href="https://github.com/mpugh0929/leadMachine" class="btn btn-success">GitHub Link</a>
                             </div>
@@ -191,7 +190,11 @@
                         <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
                         <div class="card-body">
                             <h4 class="card-title">Lead Machine 2.0</h4>
-                            <p class="card-text">In the new-and-improved version, I made it so the program pulls the phone numbers straight out of the lead provider's website using their API at the push of a button and then sends off SMS messages to each individually. This tool has incredible business value to my client as it saves them tens of hours a week.</p>
+                            <p class="card-text">
+                              In the new-and-improved version, I made it so the program pulls the phone numbers straight out of the lead provider's website using their API at the push of a button and then sends off SMS messages to each individually.
+                              This tool has incredible business value to my client as it saves them tens of hours a week.
+                              At the link below, you can find a demo version that will send a text from a Twilio number you own to any other number. On this version, I used Python/Flask for the back end and HTML/CSS for the front end.
+                            </p>
                             <div class="text-center">
                                 <a href="https://github.com/mpugh0929/LeadMachine2.0" class="btn btn-success">GitHub Link</a>
                             </div>
@@ -212,7 +215,7 @@
                     </div>
                 </div>
             </div>
-            <br>
+            <br/>
             <div class="row">
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent">
@@ -226,9 +229,52 @@
                         </div>
                     </div>
                 </div>
+            </div>
+    </section>
+
+    <section id="project">
+      <div class="container">
+        <h1>Pig x2</h1>
+        <form class="visible" method="post" id="pregame">
+          <table class="center">
+            <tr><td><label for="player1" class="pregameElement">Player 1 Name: </label></td> <td><input type="text" id="player1"></td></tr>
+            <tr><td><label for="player2">Player 2 Name: </label></td> <td><input type="text" id="player2"></td></tr>
+            <tr><td><label for="maxScore">Max Score: </label></td> <td><input type="text" id="maxScore"/></td></tr>
+          </table>
+          &nbsp; <br/>
+          <input type="button" id="startGame" value="Start Game" />
+        </form>
+
+        &nbsp; <br/>
+
+        <div class="scoreboard" id="scoreboard">
+
+        </div>
+
+        &nbsp; <br/>
+
+        <div id="gameStats">
+
+        </div>
+
+        &nbsp; <br/>
+
+        <div class="hidden" id="gameButtons">
+          <input type="button" name="Roll" value="Roll"  onclick="rollDice()" id="Roll"/>
+          &nbsp;
+          <input type="button" name="Stop" value="Stop" onclick="endButton()" id="Stop"/>
+        </div>
+
+      </div>
+
+      <br/> &nbsp;
+      <div id="dice">
+
+      </div>
+    </section>
 
 
-    <!-- footer section-->
+    <!-- footer-->
     <footer id="footer">
         <div class="container-fluid">
             <!-- social media icons -->
@@ -242,8 +288,9 @@
         </div>
     </footer>
 
-    <!-- load javascript after loading all html content -->
     <script src="script/script.js"></script>
+    <script src="script/ProjectJS.js"></script>
+
 
 </body>
 
